@@ -1,0 +1,9 @@
+EC2 Audit Report - us-east-1
+--------------------------------------------------------------------------------
+Instance_ID: i-0f2c2bf71a1153da4
+Name: ng1
+State: running
+Type: t3.micro
+IAM_Instance_Profile: yes
+Findings: ok
+--------------------------------------------------------------------------------
