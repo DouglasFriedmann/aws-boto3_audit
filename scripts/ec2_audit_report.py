@@ -9,7 +9,7 @@ response = ec2.describe_instances()
 instances = []
 
 for reservation in response["Reservations"]:
-    instance.extend(reservation["Instances"])
+    instances.extend(reservation["Instances"])
 
 if not instances:
     print(f"No EC2 instances found in region: {REGION}.")
@@ -38,7 +38,7 @@ else:
             findings.append("missing_name_tag")
         
         if not iam_profile:
-            findings.append("missing_istance_profile")
+            findings.append("missing_instance_profile")
 
         if not findings:
             findings.append("ok")
