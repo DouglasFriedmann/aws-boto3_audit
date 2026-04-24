@@ -15,9 +15,9 @@ if not instances:
 else:
     for instance in instances:
         instance_id = instance.get("InstanceId", "N/A")
-        instance_id = instance.get("Tags", [])
+        tags = instance.get("Tags", [])
 
-        name_Tag = none
+        name_tag = None
 
         for tag in tags:
             if tag.get("Key") == "Name":

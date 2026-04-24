@@ -6,7 +6,7 @@ response = ec2.describe_instances()
 
 instances = []
 for reservation in response["Reservations"]:
-    instancea.extend(reservation["Instances"])
+    instances.extend(reservation["Instances"])
 
 if not instances:
     print("No EC2 instances found in this region.")
